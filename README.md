@@ -1,6 +1,8 @@
 # Guide to Covert .g00 File into .png and Repacking back to .g00
 While playing a visual novel, I found a decent MTL patch that translated the text but not the CGs such as menus and episode screens. I decided to translate them myself and discovered they were stored in `.g00` files. Resources for this format are very limited, and many of the tools I found either did not work or were unavailable. After some trial and error, I figured out how to extract and repack `.g00` files (the repacking part was the main problem extraction was pretty simple). I am compiling all the info and steps in this guide so that someone like me does not have to go through all that trouble again.
 
+### I'm also adding the Source Code of `vaconv-cpp.exe` here in this repo, although I'm not the one who wrote it. I found it in one of the old VN Forum while researching.
+
 ---
 
 ## Tools Required
@@ -40,3 +42,5 @@ If you need to bulk resize images, here is a tutorial: [Bulk Resize Tutorial](ht
 4. Extract the zip file, you'll `vaconv-cpp.exe` and `bulkConvert.bat` copy and paste them in the same folder as your `.png` files.
 5. Double-click bulkConvert.bat.
 6. Your .png files will now be converted back into .g00 format.
+
+---
