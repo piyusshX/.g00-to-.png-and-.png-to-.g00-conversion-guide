@@ -1,0 +1,146 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{2C57D978-48CF-49AC-BC42-B1A747344C25}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>vaconvcpp</RootNamespace>
+    <WindowsTargetPlatformVersion>8.1</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>.</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>Gdiplus.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>.</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>Gdiplus.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="Compression\G00Compression.h" />
+    <ClInclude Include="Compression\lzcomp.h" />
+    <ClInclude Include="G00File.h" />
+    <ClInclude Include="G00File0.h" />
+    <ClInclude Include="G00File2.h" />
+    <ClInclude Include="Gdi.h" />
+    <ClInclude Include="IO\Directory.h" />
+    <ClInclude Include="IO\File.h" />
+    <ClInclude Include="IO\FileStream.h" />
+    <ClInclude Include="IO\MemoryStream.h" />
+    <ClInclude Include="IO\Path.h" />
+    <ClInclude Include="IO\Stream.h" />
+    <ClInclude Include="pugi\pugiconfig.hpp" />
+    <ClInclude Include="pugi\pugixml.hpp" />
+    <ClInclude Include="stdafx.h" />
+    <ClInclude Include="tclap\Arg.h" />
+    <ClInclude Include="tclap\ArgException.h" />
+    <ClInclude Include="tclap\ArgTraits.h" />
+    <ClInclude Include="tclap\CmdLine.h" />
+    <ClInclude Include="tclap\CmdLineInterface.h" />
+    <ClInclude Include="tclap\CmdLineOutput.h" />
+    <ClInclude Include="tclap\Constraint.h" />
+    <ClInclude Include="tclap\DocBookOutput.h" />
+    <ClInclude Include="tclap\HelpVisitor.h" />
+    <ClInclude Include="tclap\IgnoreRestVisitor.h" />
+    <ClInclude Include="tclap\MultiArg.h" />
+    <ClInclude Include="tclap\MultiSwitchArg.h" />
+    <ClInclude Include="tclap\OptionalUnlabeledTracker.h" />
+    <ClInclude Include="tclap\StandardTraits.h" />
+    <ClInclude Include="tclap\StdOutput.h" />
+    <ClInclude Include="tclap\SwitchArg.h" />
+    <ClInclude Include="tclap\UnlabeledMultiArg.h" />
+    <ClInclude Include="tclap\UnlabeledValueArg.h" />
+    <ClInclude Include="tclap\ValueArg.h" />
+    <ClInclude Include="tclap\ValuesConstraint.h" />
+    <ClInclude Include="tclap\VersionVisitor.h" />
+    <ClInclude Include="tclap\Visitor.h" />
+    <ClInclude Include="tclap\XorHandler.h" />
+    <ClInclude Include="tclap\ZshCompletionOutput.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Compression\G00Compression.cpp" />
+    <ClCompile Include="G00File.cpp" />
+    <ClCompile Include="G00File0.cpp" />
+    <ClCompile Include="G00File2.cpp" />
+    <ClCompile Include="Gdi.cpp" />
+    <ClCompile Include="IO\Directory.cpp" />
+    <ClCompile Include="IO\File.cpp" />
+    <ClCompile Include="IO\FileStream.cpp" />
+    <ClCompile Include="IO\MemoryStream.cpp" />
+    <ClCompile Include="IO\Path.cpp" />
+    <ClCompile Include="IO\Stream.cpp" />
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="pugi\pugixml.cpp" />
+    <ClCompile Include="stdafx.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
+    </ClCompile>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
