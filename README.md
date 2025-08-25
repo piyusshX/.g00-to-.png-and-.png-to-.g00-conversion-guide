@@ -39,8 +39,8 @@ If you need to bulk resize images, here is a tutorial: [Bulk Resize Tutorial](ht
 
 2. Place all the `.png` files in the same folder.  
 3. Download **vaconv-cpp.exe** from the GitHub releases section.
-4. Extract the zip file, you'll `vaconv-cpp.exe` and `bulkConvert.bat` copy and paste them in the same folder as your `.png` files.
-5. Double-click bulkConvert.bat.
+4. Extract the zip file, you'll see `vaconv-cpp.exe` and `bulkConvert.bat`. Copy and paste them into the same folder where your `.png` files are located.
+5. Double-click `bulkConvert.bat` file.
 6. Your .png files will now be converted back into .g00 format.
 
 ---
