@@ -48,7 +48,4 @@ If you need to bulk resize images, here is a tutorial: [Bulk Resize Tutorial](ht
 ## Additional Reference
 
 If you're interested in learning more about **vaconv-cpp**, here is the link to the forum its post #5 in the thread
-
-[vaconv-cpp discussion](https://forums.fuwanovel.moe/topic/4887-data-extraction-thread/page/21/)
-
-In that post, the developer explains how and why they created **vaconv-cpp.exe** (a fully rewritten C++ version of the original tool) to properly handle multi-image `.g00` files. Unlike the original tool, this version stacks multiple images vertically in the output `.png`, making editing more manageable :contentReference[oaicite:0]{index=0}.
+[vaconv-cpp thread](https://forums.fuwanovel.moe/topic/4887-data-extraction-thread/page/21/)
